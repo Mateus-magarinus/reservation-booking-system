@@ -26,7 +26,7 @@ export class UsersService {
     } catch (error) {
       return;
     }
-    throw new UnprocessableEntityException('Email already exists');
+    throw new UnprocessableEntityException('Email already exists.');
   }
 
   async verifyUser(email: string, password: string) {
